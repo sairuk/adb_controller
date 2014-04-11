@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+    <title>%title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div id="page-wrap">
+        <div id="header">
+            <h2>%title</h2>
+        </div>
+    <div id="screencap2">
+        <img src="img/%screenshot" />
+    </div>
+    <div id="refresh">
+        <a href="/index" title="Force Screen Refresh"><img src="img/refresh.png" /></a>
+        <div id="devices">Device id: %devices</div> 
+    </div>
+    <p />
+    <div class="clear"></div>
+        <div id="controller">
+        <form action="index" method="POST">
+           <div id="controls">
+            <button name="adb_k" value="19">^</button>
+            <button name="adb_k" value="20">v</button>
+            <button name="adb_k" value="21"><</button>
+            <button name="adb_k" value="22">></button>
+            <br />
+
+            <button name="adb_k" value="4">BACK</button>
+            <button name="adb_k" value="82">MENU</button>
+            <button name="adb_k" value="3">HOME</button>
+            <br />
+            <button name="adb_k" value="111">ESC</button>
+            <button name="adb_k" value="83">NOTE</button>
+            <br />
+            <button name="adb_k" value="25">VOL-</button>
+            <button name="adb_k" value="24">VOL+</button>
+            </div>
+
+            <p />
+
+            <div id="keyboard">
+            <button name="adb_k" value="#">~</button>                
+            <button name="adb_k" value="8">1</button>
+            <button name="adb_k" value="9">2</button>
+            <button name="adb_k" value="10">3</button>
+            <button name="adb_k" value="11">4</button>
+            <button name="adb_k" value="12">5</button>
+            <button name="adb_k" value="13">6</button>
+            <button name="adb_k" value="14">7</button>
+            <button name="adb_k" value="15">8</button>
+            <button name="adb_k" value="16">9</button>
+            <button name="adb_k" value="7">0</button>
+            <button name="adb_k" value="69">-</button>
+            <button name="adb_k" value="70">=</button>
+            <button name="adb_k" value="67">BKSPC</button>
+            <br />            
+            <button name="adb_k" value="61">TAB</button>                
+            <button name="adb_k" value="45">Q</button>
+            <button name="adb_k" value="51">W</button>
+            <button name="adb_k" value="33">E</button>
+            <button name="adb_k" value="46">R</button>
+            <button name="adb_k" value="48">T</button>
+            <button name="adb_k" value="53">Y</button>
+            <button name="adb_k" value="49">U</button>
+            <button name="adb_k" value="37">I</button>
+            <button name="adb_k" value="43">O</button>
+            <button name="adb_k" value="44">P</button>
+            <button name="adb_k" value="71">{</button>
+            <button name="adb_k" value="72">}</button>
+            <button name="adb_k" value="73">\</button>
+            <br />
+            <button name="adb_k" value="115">CL</button>
+            <button name="adb_k" value="29">A</button>
+            <button name="adb_k" value="47">S</button>
+            <button name="adb_k" value="32">D</button>
+            <button name="adb_k" value="34">F</button>
+            <button name="adb_k" value="35">G</button>
+            <button name="adb_k" value="36">H</button>
+            <button name="adb_k" value="37">I</button>
+            <button name="adb_k" value="38">J</button>
+            <button name="adb_k" value="39">K</button>
+            <button name="adb_k" value="40">L</button>
+            <button name="adb_k" value="74">;</button>
+            <button name="adb_k" value="75">'</button>
+            <button name="adb_k" value="66">ENTER</button>
+            <br />            
+            <button name="adb_k" value="59">LSHFT</button>                
+            <button name="adb_k" value="54">Z</button>
+            <button name="adb_k" value="52">X</button>
+            <button name="adb_k" value="31">C</button>
+            <button name="adb_k" value="50">V</button>
+            <button name="adb_k" value="30">B</button>
+            <button name="adb_k" value="42">N</button>
+            <button name="adb_k" value="41">M</button>
+            <button name="adb_k" value="55">,</button>
+            <button name="adb_k" value="56">.</button>
+            <button name="adb_k" value="76">/</button>
+            <button name="adb_k" value="60">RSHFT</button>
+            <br />            
+            <button name="adb_k" value="113">LCTRL</button>                
+            <button name="adb_k" value="171">SUPER</button>
+            <button name="adb_k" value="57">LALT</button>
+            <button name="adb_k" value="62">SPACE</button>
+            <button name="adb_k" value="58">RALT</button>
+            <button name="adb_k" value="63">M2</button>
+            <button name="adb_k" value="114">RCTRL</button>
+            </div>
+        </form>   
+            <p />
+        <form action="index" method="POST">
+            Custom Keyevent (adb shell input keyevent &lt;value&gt;)<br />
+            <textarea name="adb_ik_send"></textarea>
+            <input type="submit" value="Send Key"/><p />
+        <form action="index" method="POST">
+            Run Custom Command (adb shell &lt;value&gt;)<br />
+            <textarea name="adb_shell"></textarea>
+            <input type="submit" value="Run Shell"/><p />
+        </form>
+
+        <form action="index" method="POST">
+            Send Text String (adb shell input text &lt;value&gt;)<br />
+            <textarea name="adb_it_send"></textarea>
+            <input type="submit" value="Send Text"/><p />
+        </form>
+        <!--
+        <form action="index" method="POST">
+            Install APK (adb install &lt;value&gt;)<br />
+            <input type="file" name="adb_apk"/>
+            <input class="button" type="submit" value="Install"/><p />
+        </form>
+        -->
+        <form action="index" method="POST">
+            Settings Screen
+            <select name="apk_screen">
+            <option value="com.android.settings/.DevelopmentSettings">Developer</option>
+            <option value="com.android.settings/.SecuritySettings">Security</option>
+            </select>
+            <input class="button" type="submit" value="Open"/><p />
+        </form>
+        <form action="index" method="POST">
+            Device Control
+            <select name="device_reboot">
+            <option value="reboot">Reboot</option>
+            <option value="recovery">Recovery</option>
+            <option value="bootloader">Bootloader</option>
+            </select>
+            <input class="button" type="submit" value="Send"/><p />
+        </form>
+        </div>
+            <div id="footer">%title</div>
+        </div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+    $("#screencap2 img").click(function(e) {
+        var rect = $("#screencap2 img").position();
+        $.post('index',{x:e.pageX,y:e.pageY,zy:rect.top,zx:rect.left});
+    });
+    setInterval(function () {
+        var d = new Date();
+        $("#screencap2 img").attr("src", "img/screen.png?"+d.getTime());
+    }, 1000);
+</script>
+</html>

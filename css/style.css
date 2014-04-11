@@ -1,0 +1,63 @@
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background: #eff;
+}
+br {
+    line-height: 2px;
+}
+div#page-wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+div#header {
+    text-align:center;   
+}
+
+
+div#controller {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+textarea {
+    display: block;
+    width: 90%;
+}
+
+div#controller div#controls {
+    margin: 0 auto;
+    text-align: center;
+}
+
+div#controller div#keyboard {
+    margin: 0 auto;
+    text-align: center;
+}
+
+div#screencap2 img {
+    left: 0px;
+    border: #ccc 3px solid;
+    box-shadow: 2px 2px 5px #888;
+}
+
+#devices {
+    position: relative;
+    float: right;
+}
+
+div#refresh img {
+    width: 20px;
+    height: auto;
+}
+
+div#footer {
+    text-align:center;   
+}
+
+.clear {
+    clear: both;
+}
+
