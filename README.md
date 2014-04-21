@@ -5,10 +5,12 @@ A CherryPy / Python based frontend for controlling the Android Debugging Bridge 
 * Python 2.7
 * ADB from the Android SDK *(accessible via $PATH)*
 * Android Debugging enabled on device
+
 #####Usage:
 1. Download
 2. Connect Tablet via USB
 3. Run adb_controller.py *(Browser will open automatically)*
+
 #####Features:
 * Reboot device
 * Keyboard control
